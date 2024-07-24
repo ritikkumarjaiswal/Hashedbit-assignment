@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic CSS</title>
+    <style>
+       #dynamic-div {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: lightgrey;
+    border: 2px solid black;
+}
+
+    </style>
+</head>
+<body>
+    <button id="change-style">Change Style</button>
+    <div id="dynamic-div">This div will change its style dynamically.</div>
+    <script>
+      document.getElementById('change-style').addEventListener('click', function() {
+    const div = document.getElementById('dynamic-div');
+    div.style.backgroundColor = 'lightgreen';
+    div.style.border = '2px dashed red';
+    div.style.padding = '30px';
+    div.style.color = 'blue';
+});
+
+    </script>
+</body>
+</html>

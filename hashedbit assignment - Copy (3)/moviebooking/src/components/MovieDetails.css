@@ -1,0 +1,11 @@
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    padding: 5px;
+    border-radius: 2px;
+    background-color: lightgreen;
+}
